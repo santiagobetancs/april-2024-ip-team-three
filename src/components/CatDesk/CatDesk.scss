@@ -5,4 +5,8 @@
 
 .catdesk {
     color: $kijiji-indigo;
+
+    &__link {
+        text-decoration: none;
+    }
 }

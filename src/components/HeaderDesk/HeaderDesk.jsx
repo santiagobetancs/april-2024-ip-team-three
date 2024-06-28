@@ -59,7 +59,7 @@ export default function HeaderDesk() {
                         {
                             categories.map((cat) => {
                                 return (
-                                    <CatDesk text={cat.text} />
+                                    <CatDesk link={cat.link} text={cat.text} />
                                 )
                             })
                         }
