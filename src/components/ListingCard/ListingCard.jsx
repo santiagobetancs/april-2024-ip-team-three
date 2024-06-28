@@ -23,6 +23,11 @@ export default function ListingCard(props) {
               src="src/assets/icons/smallbusiness.png"
               alt="small business tag"
             />
+            <img
+              className="listing-card__icon"
+              src="src/assets/icons/verify.png"
+              alt="check mark on badge"
+            />
           </div>
           <p className="listing-card__description">{description}</p>
         </div>
