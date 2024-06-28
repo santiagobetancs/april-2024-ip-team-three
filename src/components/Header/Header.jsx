@@ -5,13 +5,16 @@ import k from '../../assets/images/k.svg'
 import location from '../../assets/icons/location.png'
 import Scroll from '../Scroll/Scroll';
 import categories from '../../categories/categories';
+import { Link } from 'react-router-dom';
 
 export default function Header(props) {
     return (
         <>
             <header className='header'>
                 <section className='header__container'>
-                    <img className='header__image' src={k} alt="K" />
+                    <Link to='/'>
+                        <img className='header__image' src={k} alt="K" />
+                    </Link>
                     <div className='header__block'>
                         <h4 className='header__text header__text--white'>
                             FR
@@ -39,7 +42,7 @@ export default function Header(props) {
                 <section className='header__categories'>
                     {categories.map((cat) => {
                         return (
-                            <Scroll text={cat.text} img={cat.img}/>
+                            <Scroll key={cat.text} link={cat.link} text={cat.text} img={cat.img}/>
                         )
                     })}
                 </section>

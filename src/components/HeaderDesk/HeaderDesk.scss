@@ -1,0 +1,145 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.desk {
+    width: 100%;
+    padding: 1rem;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__logo {
+        width: 4rem;
+        height: 2rem;
+    }
+
+    &__query {
+        display: flex;
+        border: 1px solid $footer-list-heading;
+        height: 3rem;
+        align-items: center;
+        border-radius: 0.25rem;
+    }
+
+    &__box {
+        display: flex;
+        height: 80%;
+        align-items: center;
+        border-right: 1px solid $footer-list-heading;
+        padding: 0 1rem;
+    }
+
+    &__glass {
+        height: 1rem;
+        margin-right: 1rem;
+    }
+
+    &__search {
+    border: none;
+
+    &::placeholder {
+        font-size: 0.8rem;
+    }
+    }
+
+    &__category {
+        display: flex;
+        padding: 2rem;
+        align-items: center;
+    }
+
+    &__cat {
+        height: 1rem;
+
+        &-label {
+            font-size: 0.75rem;
+        }
+
+        &-input {
+            border: none;
+        }
+
+        &-img {
+            height: 0.75rem;
+        }
+
+        &-text {
+            padding: 1rem 2rem;
+            border: 1px solid $kijiji-indigo;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__stack {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        width: 6rem;
+    }
+
+    &__location {
+        display: flex;
+
+        &-img {
+            height: 2rem;
+        }
+    }
+
+    &__text {
+
+        &--pin {
+            color: $kijiji-indigo;
+            display: flex;
+            align-items: center;
+        }
+
+        &--blue {
+            color: $kijiji-indigo;
+        }
+
+        &--white {
+            padding: 1rem 2rem;
+            background-color: $kijiji-indigo;
+            color: white;
+            border-radius: 0.25rem;
+        }
+    }
+
+    &__right {
+        display: flex;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__trending {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &__yellow {
+        padding: 0.25rem 1rem;
+        background-color: $kijiji-yellow;
+    }
+}
