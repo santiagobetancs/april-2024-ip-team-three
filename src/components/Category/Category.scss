@@ -1,0 +1,55 @@
+@use "../../styles/partials/mixins" as *;
+.category-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1.5rem;
+  width: 100%;
+  @include desktop {
+    width: 80%;
+  }
+  &__item {
+    position: relative;
+    flex: 0 0 auto;
+    height: 200px;
+    width: 45%;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    @include tablet {
+      height: 230px;
+      width: 40%;
+    }
+    @include desktop {
+      width: 20%;
+      height: 200px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &__overlay {
+    position: absolute;
+    top: 5rem;
+    @include tablet {
+      top: 6rem;
+    }
+    @include desktop {
+      top: 5rem;
+    }
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
