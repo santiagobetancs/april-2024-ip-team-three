@@ -1,5 +1,6 @@
 import Header from "../../components/Header/Header";
 import HeaderDesk from "../../components/HeaderDesk/HeaderDesk";
+import './LocalBusinessPage.scss'
 
 export default function LocalBusinessPage() {
     return (
@@ -10,6 +11,9 @@ export default function LocalBusinessPage() {
             <div className="local__desktop">
                 <HeaderDesk />
             </div>
+            <h1 className="local__title">
+                Small Businesses
+            </h1>
         </>
     )
 }

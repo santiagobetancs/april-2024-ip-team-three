@@ -11,7 +11,11 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
+
+    &:active {
+        border-bottom: $kijiji-yellow;
+    }
 
     &__image {
         border-radius: 50%;

@@ -1,0 +1,27 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.local {
+
+    &__mobile {
+        
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &__desktop {
+        display: none;
+
+        @include desktop {
+            display: flex;
+        }
+    }
+
+    &__title {
+        color: $kijiji-indigo;
+        padding: 1rem;
+    }
+}
