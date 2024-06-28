@@ -1,12 +1,33 @@
 @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+
 .category-section {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
   gap: 1.5rem;
   width: 100%;
+  font-family: $primary-font;
+  font-weight: 400;
   @include desktop {
     width: 80%;
+  }
+  &__image {
+    background: url("https://webapp-static.ca-kijiji-production.classifiedscloud.io/1.36.3/_next/static/media/kijiji-autos-en.5fc81723.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 45%;
+    @include tablet {
+      height: 230px;
+      width: 40%;
+    }
+    @include desktop {
+      width: 20%;
+      height: 150px;
+    }
   }
   &__item {
     position: relative;
@@ -15,41 +36,50 @@
     width: 45%;
     background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
     border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     overflow: hidden;
+    cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
     @include tablet {
       height: 230px;
       width: 40%;
     }
     @include desktop {
       width: 20%;
-      height: 200px;
-    }
-
-    &:hover {
-      transform: scale(1.05);
+      height: 150px;
     }
   }
   &__overlay {
-    position: absolute;
-    top: 5rem;
+    top: 3.5rem;
+    width: 60%;
+    margin: 0 auto;
     @include tablet {
+      width: 60%;
+      margin: 0 auto;
       top: 6rem;
     }
     @include desktop {
-      top: 5rem;
+      top: 3rem;
+      padding: 0.5rem;
     }
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(55, 51, 115, 0.8);
     color: #fff;
     text-align: center;
     padding: 0.5rem;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: $kijiji-indigo;
+      transition: transform 0.3s ease-in-out;
+      transform: scale(1.05);
+    }
   }
 
   &__title {
+    line-height: 1.5rem;
     font-size: 1rem;
-    font-weight: bold;
   }
 }

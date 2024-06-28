@@ -1,0 +1,127 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+.sidebar {
+  width: 300px;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: $primary-font;
+  &__notify {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  &__label {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  &__switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  &__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+  }
+
+  input:checked + .sidebar__slider {
+    background-color: #2196f3;
+  }
+
+  input:checked + .sidebar__slider:before {
+    transform: translateX(16px);
+  }
+
+  &__filters {
+    &__heading {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__filter {
+    margin-bottom: 1rem;
+  }
+
+  &__filter-label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  &__select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 1rem;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    &-input {
+      width: 45%;
+      padding: 0.5rem;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+  }
+
+  &__apply-button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: #1976d2;
+    }
+  }
+
+  &__offer {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
