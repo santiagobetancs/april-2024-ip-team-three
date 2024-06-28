@@ -19,9 +19,9 @@ export default function ListingCard(props) {
           </div>
           <div className="listing-card__badge-container">
             <img
-              className="listing-card__top-badge"
-              src="src/assets/icons/top.svg"
-              alt="top ad badge"
+              className="listing-card__badge"
+              src="src/assets/icons/smallbusiness.png"
+              alt="small business tag"
             />
           </div>
           <p className="listing-card__description">{description}</p>
@@ -31,6 +31,11 @@ export default function ListingCard(props) {
             className="listing-card__icon"
             src="src/assets/icons/like.svg"
             alt="heart icon"
+          />
+          <img
+            className="listing-card__icon"
+            src="src/assets/icons/sm-bus.svg"
+            alt="small business badge"
           />
         </div>
       </div>
