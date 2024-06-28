@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import ListingCard from "../ListingCard/ListingCard";
 import "./Listings.scss";
 
-export default function Listings({ listingsList }) {
+export default function Listings() {
   const listings = [
     {
       img: "src/assets/images/handyman.jpg",
