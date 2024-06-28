@@ -16,50 +16,49 @@
 
 //fonts
 @mixin titles {
-  font-family: $primary-font;
   font-size: 1.375rem;
   line-height: 1.625rem;
   font-weight: 500;
 }
 
 @mixin subtitles {
-  font-family: $primary-font;
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-weight: 400;
 }
 
 @mixin card-titles {
-  font-family: $primary-font;
   font-size: 1.125rem;
   line-height: 1.625rem;
   font-weight: 400;
 }
 
 @mixin banner-subtitles {
-  font-family: $primary-font;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
 } //also used for primary nav links
 
 @mixin buttons {
-  font-family: $primary-font;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 500;
 }
 
 @mixin secondary-nav-links {
-  font-family: $primary-font;
   font-size: 0.875rem;
   line-height: 1.125rem;
   font-weight: 400;
 }
 
 @mixin tertiary-nav-links {
-  font-family: $primary-font;
   font-size: 0.75rem;
   line-height: 1rem;
+  font-weight: 400;
+}
+
+@mixin footer-text {
+  font-size: 1rem;
+  line-height: 1.25rem;
   font-weight: 400;
 }
