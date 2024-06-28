@@ -10,14 +10,28 @@
   border: 1px solid #ececee;
   border-radius: 8px;
 
+  @include desktop {
+    padding: 1rem;
+    width: 100%;
+  }
+
   &__image-container {
     flex: 0 0 auto;
+    width: 104px;
+    height: 104px;
+
+    @include desktop {
+      height: 176px;
+      width: 176px;
+    }
   }
 
   &__image {
-    width: 104px;
-    height: 104px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 8px;
+    height: 100%;
+    width: 100%;
   }
 
   &__container {
@@ -30,6 +44,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include desktop {
+      justify-content: flex-start;
+      gap: 0.5rem;
+    }
   }
 
   &__price {
@@ -41,6 +60,7 @@
 
   &__title {
     @include card-titles;
+    color: $kijiji-indigo;
   }
 
   &__details {
@@ -55,7 +75,29 @@
     border-left: 1px solid $footer-list-heading;
   }
 
+  &__badge-container {
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  &__badge {
+    height: 20px;
+    width: 100px;
+  }
+
   &__description {
     display: none;
+
+    @include desktop {
+      @include banner-subtitles;
+      color: $kijiji-light-grey;
+      display: initial;
+    }
+  }
+
+  &__icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
