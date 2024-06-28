@@ -1,6 +1,7 @@
 import routes from "./router/routes";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
+import Listings from "./components/Listings/Listings";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             />
           ))}
         </Routes>
+        <Listings />
         <Footer />
       </BrowserRouter>
     </>

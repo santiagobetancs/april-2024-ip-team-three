@@ -55,7 +55,7 @@ const Category = () => {
         </div>
       ))}
     </section>
-  )
-}
+  );
+};
 
 export default Category;

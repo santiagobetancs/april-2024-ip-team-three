@@ -1,0 +1,61 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.listing-card {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ececee;
+  border-radius: 8px;
+
+  &__image-container {
+    flex: 0 0 auto;
+  }
+
+  &__image {
+    width: 104px;
+    height: 104px;
+    border-radius: 8px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__price {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+    color: $kijiji-money;
+  }
+
+  &__title {
+    @include card-titles;
+  }
+
+  &__details {
+    @include tertiary-nav-links;
+    display: flex;
+    gap: 0.25rem;
+    color: $kijiji-light-grey;
+  }
+
+  &__date {
+    padding-left: 0.25rem;
+    border-left: 1px solid $footer-list-heading;
+  }
+
+  &__description {
+    display: none;
+  }
+}
