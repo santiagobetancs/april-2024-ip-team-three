@@ -49,5 +49,13 @@ const Category = () => {
           className="category-section__item"
           style={{ backgroundImage: `url(${category.image})` }}
         >
+          <div className="category-section__overlay">
+            <div className="category-section__title">{category.title}</div>
+          </div>
+        </div>
+      ))}
+    </section>
+  );
+};
 
 export default Category;

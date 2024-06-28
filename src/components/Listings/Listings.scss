@@ -2,3 +2,14 @@
 @use "../../styles/partials/resets" as *;
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/variables" as *;
+
+.listings {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  &__link {
+    text-decoration: none;
+  }
+}

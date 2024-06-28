@@ -1,7 +1,7 @@
 import "./ListingCard.scss";
 
 export default function ListingCard(props) {
-  const { img, alt, price, title, location, date } = props.listing;
+  const { img, alt, price, title, location, date, description } = props;
   return (
     <div className="listing-card">
       <div className="listing-card__image-container">
@@ -24,6 +24,7 @@ export default function ListingCard(props) {
               alt="top ad badge"
             />
           </div>
+          <p className="listing-card__description">{description}</p>
         </div>
         <div className="listing-card__icon-container">
           <img
