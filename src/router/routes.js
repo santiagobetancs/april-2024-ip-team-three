@@ -10,7 +10,7 @@ const routes = [
     },
     {
         name: "small-business",
-        path: '/small-business',
+        path: '/small',
         component: LocalBusinessPage
     }, 
     {

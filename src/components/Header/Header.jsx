@@ -42,7 +42,7 @@ export default function Header(props) {
                 <section className='header__categories'>
                     {categories.map((cat) => {
                         return (
-                            <Scroll text={cat.text} img={cat.img}/>
+                            <Scroll key={cat.text} link={cat.link} text={cat.text} img={cat.img}/>
                         )
                     })}
                 </section>
