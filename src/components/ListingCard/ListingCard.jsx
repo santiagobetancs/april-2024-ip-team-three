@@ -1,7 +1,7 @@
 import "./ListingCard.scss";
 
 export default function ListingCard(props) {
-  const { img, alt, price, title, location, date } = props;
+  const { img, alt, price, title, location, date } = props.listing;
   return (
     <div className="listing-card">
       <div className="listing-card__image-container">

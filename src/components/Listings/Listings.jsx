@@ -1,14 +1,26 @@
+import { Link } from "react-router-dom";
 import ListingCard from "../ListingCard/ListingCard";
 import "./Listings.scss";
 
-export default function Listings() {
+export default function Listings({ listingsList }) {
   return (
     <>
-      <ul className="listings">
-        <li className="listings__item">
-          <ListingCard />
-        </li>
-      </ul>
+      <div className="listings">
+        {listingsList.map((listing) => {
+          return (
+            <Link className="listings__link" key={listing.id}>
+              <ListingCard
+                img={listing.img}
+                alt={listing.alt}
+                price={listing.price}
+                title={listing.title}
+                location={listing.location}
+                date={listing.date}
+              />
+            </Link>
+          );
+        })}
+      </div>
     </>
   );
 }
