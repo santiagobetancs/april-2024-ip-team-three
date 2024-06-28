@@ -12,7 +12,9 @@ export default function Header(props) {
     <>
       <header className="header">
         <section className="header__container">
-          <img className="header__image" src={k} alt="K" />
+          <Link to="/">
+            <img className="header__image" src={k} alt="K" />
+          </Link>
           <div className="header__block">
             <h4 className="header__text header__text--white">FR</h4>
             <h4 className="header__text header__text--white">Sign In</h4>
@@ -37,9 +39,12 @@ export default function Header(props) {
         <section className="header__categories">
           {categories.map((cat) => {
             return (
-              <Link>
-                <Scroll text={cat.text} img={cat.img} />
-              </Link>
+              <Scroll
+                key={cat.text}
+                link={cat.link}
+                text={cat.text}
+                img={cat.img}
+              />
             );
           })}
         </section>
