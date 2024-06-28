@@ -23,5 +23,34 @@
     &__title {
         color: $kijiji-indigo;
         padding: 1rem;
+        display: flex;
+        justify-content: center;
+
+        @include desktop {
+            justify-content: flex-start;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        padding: 1rem;
+    }
+
+    &__product {
+        color: $white;
+        padding: 1rem 1rem;
+        background-color: $kijiji-indigo;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include desktop {
+            width: 15rem;
+        }
+    }
+
+    &__block {
+        padding: 0 1rem;
     }
 }
