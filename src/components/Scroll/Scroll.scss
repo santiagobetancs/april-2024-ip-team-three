@@ -1,0 +1,35 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.scroll {
+    width: 5rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 1rem;
+
+    &__image {
+        border-radius: 50%;
+        background-color: rgb(243, 243, 249);
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 0.8rem;
+        color: rgb(55, 51, 115);;
+    }
+
+    &__pin {
+        width: 50%;
+        height: 50%;
+    }
+}
