@@ -4,19 +4,24 @@
 @use "../../styles/partials/variables" as *;
 
 .home {
-
-    &__mobile {
-        
-        @include desktop {
-            display: none;
-        }
+  &__mobile {
+    @include desktop {
+      display: none;
     }
+  }
 
-    &__desktop {
-        display: none;
+  &__desktop {
+    display: none;
 
-        @include desktop {
-            display: flex;
-        }
+    @include desktop {
+      display: flex;
     }
+  }
+}
+
+.main {
+  @include desktop {
+    display: flex;
+    padding-right: 1rem;
+  }
 }

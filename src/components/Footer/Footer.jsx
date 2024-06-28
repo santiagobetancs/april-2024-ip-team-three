@@ -43,31 +43,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="footer__buttons">
-        <div className="footer__download">
-          <div className="footer__badges">
-            <img
-              className="footer__badge"
-              src="src/assets/icons/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
-              alt="Download on the App store button"
-            />
-          </div>
-          <div className="footer__badges">
-            <img
-              className="footer__badge"
-              src="src/assets/icons/GetItOnGooglePlay_Badge_Web_color_English.png"
-              alt="Get it on Google Play button"
-            />
-          </div>
-        </div>
-        <div className="footer__social">
-          <img className="footer__icon" src="" alt="" />
-          <img className="footer__icon" src="" alt="" />
-          <img className="footer__icon" src="" alt="" />
-          <img className="footer__icon" src="" alt="" />
-          <img className="footer__icon" src="" alt="" />
-        </div>
-      </div>
       <p className="footer__copyright">
         All rights reserved. Google, Google Play, YouTube and other marks are
         trademarks of Google Inc.
