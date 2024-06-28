@@ -1,4 +1,5 @@
 import HomePage from "../pages/HomePage/HomePage"
+import LocalBusinessPage from "../pages/LocalBusinessPage/LocalBusinessPage"
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage"
 
 const routes = [
@@ -6,6 +7,11 @@ const routes = [
         name: "home",
         path: '/',
         component: HomePage
+    },
+    {
+        name: "small-business",
+        path: '/small-business',
+        component: LocalBusinessPage
     }, 
     {
        name: 'not-found-page',

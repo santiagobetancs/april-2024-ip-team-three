@@ -5,7 +5,7 @@ const categories = [
     {
         img: smallBusiness,
         text: "Small Businesses",
-        link: '/'
+        link: '/small-business'
     },
     {
         img: tag,
