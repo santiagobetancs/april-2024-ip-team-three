@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Larsseit;
+  src: url("../../assets/fonts/Larsseit.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Larsseit;
+  src: url("../../assets/fonts/Larsseit-Medium.otf");
+  font-style: normal;
+  font-weight: 500;
+}
+
+$primary-font: Larsseit, Arial, Helvetica, sans-serif;
